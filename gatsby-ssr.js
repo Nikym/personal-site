@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+import Wrapper from './wrapRootElement';
+
+export const wrapRootElement = Wrapper;
