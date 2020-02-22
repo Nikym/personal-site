@@ -1,4 +1,5 @@
 import React from 'react';
+import Panel from '../Panel/Panel';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -23,24 +24,25 @@ const useStyles = makeStyles((theme) => ({
   },
   nav: {
     display: 'flex',
-    justifyContent: 'center',
-    background: '#F5F5F5',
-    color: '#3C3C3C',
-    boxShadow: '10px 10px 0px 0px #087E8B',
+    justifyContent: 'space-around',
+    // background: '#F5F5F5',
+    // color: '#3C3C3C',
+    // boxShadow: '10px 10px 0px 0px #087E8B',
     [theme.breakpoints.up('sm')]: {
       width: 'fit-content',
+      justifyContent: 'center',
       // padding: '0 30px',
     },
   },
   navItem: {
-    padding: '0 25px',
+    padding: '0 22px',
     [theme.breakpoints.up('sm')]: {
       padding: '0 30px',
     },
-    borderRight: '0.5px solid #087E8B',
-    '&:last-of-type': {
-      borderRight: '0px',
-    },
+    // borderRight: '0.5px solid #087E8B',
+    // '&:last-of-type': {
+    //   borderRight: '0px',
+    // },
     margin: '10px 0',
     color: '#3C3C3C',
     textDecoration: 'none',
@@ -56,11 +58,11 @@ const Header = () => {
   return (
     <div className={classes.root}>
       <h1 className={classes.title}>Nik Melnikov</h1>
-      <div className={classes.nav}>
+      <Panel className={classes.nav}>
         <a href="#" className={classes.navItem}>Who</a>
         <a href="#" className={classes.navItem}>Projects</a>
         <a href="#" className={classes.navItem}>Blog</a>
-      </div>
+      </Panel>
     </div>
   )
 }
