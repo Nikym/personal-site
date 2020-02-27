@@ -1,20 +1,20 @@
 import React from "react";
 import Grid from '@material-ui/core/Grid';
-import Panel from '../components/Panel/Panel';
+import Typography from '@material-ui/core/Typography';
+import Panel, { PanelBody, PanelHeader } from '../components/Panel/Panel';
 import { makeStyles } from '@material-ui/core/styles';
 
 const IndexPage = () => (
-  <Grid container>
+  <Grid container spacing={5}>
     <Grid item md={6} xs={12}>
-      <Panel>
-        <p>Hi, I'm Nikita (or Nik). I'm a computer science student with a passion for
-           programming and the subject as a whole, with interests in online technologies
-           and web development.
-          <br/><br/>
-          I'm always looking for a challenge to help me build on and practice my skills,
-           and enjoy working on projects from time to time. If you're interested in
-            having me help work on your project(s), don't hesitate to contact me and
-            I'm sure we can work something out!</p>
+      <Panel panelid="about-panel">
+        <PanelHeader>Welcome</PanelHeader>
+        <PanelBody bodyid="about-body">
+          <Typography variant="body1">
+            Hi, I'm Nikita and this is my website! I am a Software Engineer living in the UK,
+            however originate from Belarus.
+          </Typography>
+        </PanelBody>
       </Panel>
     </Grid>
   </Grid>

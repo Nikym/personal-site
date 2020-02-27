@@ -19,6 +19,7 @@ export default (theme) => ({
     h4: {
       fontFamily: 'Open Sans',
       fontSize: '20px',
+      fontWeight: 600,
     },
     body1: {
       fontFamily: 'Open Sans',
