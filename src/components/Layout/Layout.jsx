@@ -6,10 +6,11 @@ import './Layout.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    ...theme.typography.text,
     height: '100%',
     padding: '0 20px',
-    color: '#F5F5F5',
-    fontFamily: 'Open Sans',
+    color: theme.palette.text.primary,
+    // fontFamily: 'Open Sans',
     [theme.breakpoints.up('md')]: {
       padding: '0 150px',
     },

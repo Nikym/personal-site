@@ -22,7 +22,11 @@ export default (theme) => ({
     },
     body1: {
       fontFamily: 'Open Sans',
-      fontSize: '18px',
+      fontSize: '16px',
+    },
+    body2: {
+      fontFamily: 'Open Sans',
+      fontSize: '14px',
     },
   }
 });

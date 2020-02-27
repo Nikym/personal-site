@@ -13,25 +13,18 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
-    fontSize: '40px',
-    fontFamily: 'Fredoka One',
+    ...theme.typography.h1,
+    color: theme.palette.colors.coreWhite,
     margin: 0,
-    letterSpacing: '1.5px',
     margin: '20px 0',
-    textShadow: '5px 5px 0px #087E8B, -5px -5px 0px #FF5A5F',
-    // textShadow: '-5px -5px 0px #087E8B',
-    // color: '#FF5A5F',
+    textShadow: `5px 5px 0px ${theme.palette.colors.coreTeal}, -5px -5px 0px ${theme.palette.colors.coreRed}`,
   },
   nav: {
     display: 'flex',
     justifyContent: 'space-around',
-    // background: '#F5F5F5',
-    // color: '#3C3C3C',
-    // boxShadow: '10px 10px 0px 0px #087E8B',
     [theme.breakpoints.up('sm')]: {
       width: 'fit-content',
       justifyContent: 'center',
-      // padding: '0 30px',
     },
   },
   navItem: {
@@ -39,15 +32,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       padding: '0 30px',
     },
-    // borderRight: '0.5px solid #087E8B',
-    // '&:last-of-type': {
-    //   borderRight: '0px',
-    // },
     margin: '10px 0',
-    color: '#3C3C3C',
+    color: theme.palette.colors.coreGrey,
     textDecoration: 'none',
     '&:hover': {
-      color: '#FF5A5F',
+      color: theme.palette.colors.coreRed,
     },
   },
 }));
