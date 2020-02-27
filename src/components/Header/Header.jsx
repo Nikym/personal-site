@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   heading: {
     display: 'flex',
     justifyContent: 'center',
-    marginTop: '12px',
+    marginTop: '15px',
   },
   title: {
     ...theme.typography.h1,
@@ -29,7 +29,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '50%',
     width: '200px',
     marginBottom: '20px',
-    border: `3px solid ${theme.palette.colors.coreRed}`,
+    // border: `3px solid ${theme.palette.colors.coreRed}`,
+    boxShadow: `5px 5px 0px 0px ${theme.palette.colors.coreTeal}, -5px -5px 0px 0px ${theme.palette.colors.coreRed}`,
   },
   nav: {
     display: 'flex',
